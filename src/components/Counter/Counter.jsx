@@ -9,10 +9,10 @@ const Counter = () => {
     <div className="counter">
       <h2>Counter</h2>
       <CountedNumber />
-      <section className="counter__buttons">
+      <div className="counter__buttons">
         <DecreaseButton />
         <IncreaseButton />
-      </section>
+      </div>
     </div>
   );
 };

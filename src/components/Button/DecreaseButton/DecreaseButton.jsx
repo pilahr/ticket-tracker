@@ -2,7 +2,7 @@ import React from "react";
 import "./DecreaseButton.scss";
 
 const DecreaseButton = () => {
-  return <div className="decrease-button">-</div>;
+  return <button className="decrease-button">-</button>;
 };
 
 export default DecreaseButton;

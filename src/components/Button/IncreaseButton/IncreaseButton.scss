@@ -3,11 +3,13 @@
 .increase-button {
   width: 30%;
   background-color: $color-secondary;
+  color: $color-white;
   text-align: center;
   border-radius: 15px;
   padding: 5px;
   font-size: 20px;
   font-weight: bold;
+  border: none;
 }
 
 .increase-button:hover {

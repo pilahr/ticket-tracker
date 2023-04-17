@@ -2,7 +2,7 @@ import React from "react";
 import "./IncreaseButton.scss";
 
 const IncreaseButton = () => {
-  return <div className="increase-button">+</div>;
+  return <button className="increase-button">+</button>;
 };
 
 export default IncreaseButton;
