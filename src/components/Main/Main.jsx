@@ -13,6 +13,8 @@ const Main = () => {
       <EmployeeCard />
       <EmployeeCard />
       <EmployeeCard />
+      <EmployeeCard />
+      <EmployeeCard />
     </div>
   );
 };

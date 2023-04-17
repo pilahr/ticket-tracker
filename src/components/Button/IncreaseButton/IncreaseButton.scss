@@ -6,4 +6,16 @@
   text-align: center;
   border-radius: 15px;
   padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.increase-button:hover {
+  background-color: $color-yellow;
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.increase-button:active {
+  transform: translateY(4px);
 }

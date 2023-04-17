@@ -4,4 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $color-gray;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
