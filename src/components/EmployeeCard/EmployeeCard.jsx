@@ -4,20 +4,14 @@ import Counter from "../Counter/Counter";
 import team from "../../assets/data/team.js";
 
 const EmployeeCard = () => {
-  const team = {
-    id: 1,
-    name: "Alima Miller",
-    role: "Junior Software Developer",
-  };
-
-  return (
+  return team.map((employee) => (
     <div className="employee-card">
-      <h2>Id: #{team.id}</h2>
-      <h2>Name: {team.name}</h2>
-      <h2>Role: {team.role}</h2>
+      <h2>Id: {employee.id}</h2>
+      <h2>Name: {employee.name}</h2>
+      <h2>Role: {employee.role}</h2>
       <Counter />
     </div>
-  );
+  ));
 };
 
 export default EmployeeCard;

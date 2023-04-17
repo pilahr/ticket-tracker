@@ -6,15 +6,6 @@ const Main = () => {
   return (
     <div className="main">
       <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
-      <EmployeeCard />
     </div>
   );
 };
