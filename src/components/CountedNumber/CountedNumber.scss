@@ -1,0 +1,9 @@
+@use "../../assets/sass/variables" as *;
+
+.counted-number {
+  background-color: $color-secondary;
+
+  h2 {
+    text-align: center;
+  }
+}

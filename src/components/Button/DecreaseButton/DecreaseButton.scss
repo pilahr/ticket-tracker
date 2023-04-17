@@ -1,0 +1,9 @@
+@use "../../../assets/sass/variables" as *;
+
+.decrease-button {
+  width: 30%;
+  background-color: $color-secondary;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+}

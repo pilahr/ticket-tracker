@@ -1,0 +1,12 @@
+@use "../../assets/sass/variables" as *;
+
+.employee-card {
+  height: 400px;
+  width: 200px;
+  border: 4px solid $color-gray;
+  margin: 20px;
+  padding: 10px;
+  background-color: $color-black;
+  color: $color-white;
+  border-radius: 20px;
+}
