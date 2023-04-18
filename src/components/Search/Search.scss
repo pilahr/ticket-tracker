@@ -1,17 +1,15 @@
 @use "../../assets/sass/variables" as *;
 
-.main {
+.search-container {
   display: flex;
-  flex-wrap: wrap;
-  background-color: $color-gray;
-  justify-content: center;
-  padding: 5px;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 992px) {
-  .main {
+  .search-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
