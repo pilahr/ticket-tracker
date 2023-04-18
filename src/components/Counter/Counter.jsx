@@ -1,8 +1,7 @@
 import React from "react";
 import "./Counter.scss";
 import CountedNumber from "../CountedNumber/CountedNumber.jsx";
-import DecreaseButton from "../Button/DecreaseButton/DecreaseButton";
-import IncreaseButton from "../Button/IncreaseButton/IncreaseButton";
+import Button from "../Button/Button";
 
 const Counter = () => {
   return (
@@ -10,8 +9,8 @@ const Counter = () => {
       <h2>Counter</h2>
       <CountedNumber />
       <div className="counter__buttons">
-        <DecreaseButton />
-        <IncreaseButton />
+        <Button buttonText={"-"} isIncrease={false} />
+        <Button buttonText={"+"} isIncrease={true} />
       </div>
     </div>
   );
