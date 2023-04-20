@@ -1,11 +1,19 @@
-import React from 'react'
-import "./SearchBar.scss"
+import React from "react";
+import "./SearchBar.scss";
+import team from "../../../assets/data/team.js";
 
 const SearchBar = () => {
-  return (
-    <input className='search-bar' placeholder='Search...'></input>
-  
-  )
-}
+  const sortedName = team.sort((nameA, nameB) => {
+    return nameA.name - nameB.name;
+  });
 
-export default SearchBar
+  return (
+    <input
+      onInput={sortedName}
+      className="search-bar"
+      placeholder="Search by name..."
+    ></input>
+  );
+};
+
+export default SearchBar;

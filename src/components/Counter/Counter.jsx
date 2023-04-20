@@ -1,16 +1,25 @@
-import React from "react";
+import { React, useState } from "react";
 import "./Counter.scss";
-import CountedNumber from "../CountedNumber/CountedNumber.jsx";
 import Button from "../Button/Button";
 
 const Counter = () => {
+  const [counter, setCounter] = useState(0);
+
+  const handleIncrement = () => {
+    setCounter(counter + 1);
+  };
+
+  const handleDecrement = () => {
+    setCounter(counter - 1);
+  };
+
   return (
     <div className="counter">
       <h2>Counter</h2>
-      <CountedNumber />
+      <h2 className="counter__number">{counter}</h2>
       <div className="counter__buttons">
-        <Button buttonText={"-"} isIncrease={false} />
-        <Button buttonText={"+"} isIncrease={true} />
+        <Button onClick={handleDecrement} buttonText={"-"} isIncrease={false} />
+        <Button onClick={handleIncrement} buttonText={"+"} isIncrease={true} />
       </div>
     </div>
   );

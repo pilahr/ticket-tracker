@@ -14,15 +14,4 @@ const EmployeeCard = () => {
   ));
 };
 
-// const EmployeeCard = (props) => {
-//   return (
-//     <div className="employee-card">
-//       <h2>Id: {props.employeeId}</h2>
-//       <h2>Name: {props.employeeName}</h2>
-//       <h2>Role: {props.employeeRole}</h2>
-//       <Counter />
-//     </div>
-//   );
-// };
-
 export default EmployeeCard;

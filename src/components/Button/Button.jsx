@@ -10,7 +10,7 @@ const Button = (props) => {
     buttonStyle += " decrease";
   }
 
-  return <button className={buttonStyle}>{props.buttonText}</button>;
+  return <button onClick={props.onClick} className={buttonStyle}>{props.buttonText}</button>;
 };
 
 export default Button;

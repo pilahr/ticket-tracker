@@ -2,8 +2,9 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Search from "./components/Search/Search";
+import team from "../src/assets/data/team.js";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -11,6 +12,6 @@ function App() {
       <Main />
     </div>
   );
-}
+};
 
 export default App;
