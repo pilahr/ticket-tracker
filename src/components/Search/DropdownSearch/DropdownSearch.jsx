@@ -3,28 +3,31 @@ import "./DropdownSearch.scss";
 import team from "../../../assets/data/team.js";
 
 const DropdownSearch = () => {
-  const [employee, setEmployee] = useState("");
+  // const [select, setSelect] = useState("");
 
-  const sortedName = team.sort((nameA, nameB) => {
-    return nameA.name - nameB.name;
-  });
+  // const handleSelect = (event) => {
+  //   setSelect(event.target.value);
 
-  const sortedRole = team.sort((roleA, roleB) => {
-    return roleA.role - roleB.role;
-  });
+  //   const selectedNames = [...team]
+  //     .filter((name) => name.name)
+  //     .sort((nameA, nameB) => nameA.name - nameB.name);
 
-  const handleSelect = (event) => {
-    const selected = event.target.value;
-    setEmployee(selected);
-  };
+  //   const selectedRoles = [...team]
+  //     .filter((role) => role.role)
+  //     .sort((roleA, roleB) => roleB.role - roleA.role);
+  // };
 
   return (
     <div className="dropdown">
       <label className="dropdown__text">Please select the option: </label>
-      <select className="dropdown__select" onChange={handleSelect}>
+      <select
+        className="dropdown__select"
+        // value={select}
+        // onChange={handleSelect}
+      >
         <option>ID</option>
-        <option onClick={sortedName}>Name</option>
-        <option onClick={sortedRole}>Role</option>
+        <option>Name</option>
+        <option>Role</option>
       </select>
     </div>
   );

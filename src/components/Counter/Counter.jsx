@@ -10,7 +10,7 @@ const Counter = () => {
   };
 
   const handleDecrement = () => {
-    setCounter(counter - 1);
+    counter > 0 ? setCounter(counter - 1) : setCounter(0);
   };
 
   return (
